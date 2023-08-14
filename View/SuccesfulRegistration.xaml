@@ -1,0 +1,116 @@
+﻿<Window x:Class="DotaHelper.View.SuccesfulRegistration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DotaHelper.View"
+        mc:Ignorable="d"
+        Title="SuccesfulRegistration" WindowStyle="None"
+        Height="200" Width="300"
+        Style="{StaticResource MyWindowStyle}"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+
+    <Border CornerRadius="17">
+        <!--Формируем границу и закругленные края фона-->
+        <Border.Background>
+            <ImageBrush ImageSource="C:\Users\mkrch\source\repos\DotaHelper\Images\muerta.jpg"
+                        Stretch="UniformToFill"/>
+        </Border.Background>
+        <!--Вставляем фон окна приложения-->
+        <Border CornerRadius="15" 
+            BorderThickness="3">
+            <!--Меняем свойства фона и границы-->
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.5"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <!--Красим границу в градиент-->
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" Opacity="0.94">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B1448" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <!--Делаем цветной градиент фона приложения-->
+            <StackPanel Width="299" Height="189" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Вы успешно зарегистрировались!" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" Foreground="FloralWhite"
+                           HorizontalAlignment="Center" Margin="0,20,0,0" FontFamily="monteserrat"
+                           Width="250" TextAlignment="Center"/>
+                <TextBlock Text="Пожалуйста, вернитесь в окно входа для авторизации" TextWrapping="Wrap" FontSize="10" FontWeight="Bold" Foreground="FloralWhite"
+                           HorizontalAlignment="Center" Margin="0,10,0,0" FontFamily="monteserrat"
+                           Width="250" TextAlignment="Center"/>
+                <Button x:Name="btnToLogin"
+                            BorderThickness="0"
+                            Content="Вернуться"
+                            Foreground="NavajoWhite"
+                            FontFamily="Monteserrat"
+                            FontSize="16"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Margin="0,20,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Opacity="1"
+                            Click="btnToLogin_Click"        >
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Background" Value="#8A16C1"/>
+                            <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                                     Duration="0:0:0.2" To="#C62DAE" 
+                                                             />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                                     Duration="0:0:0.2" To="#8A16C1" 
+                                                             />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+
+                        <ControlTemplate TargetType="Button">
+
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        BorderBrush="FloralWhite"
+                                                                    TextBlock.Foreground="FloralWhite"
+                                                BorderThickness="3"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Text="Или нажмите Enter" TextWrapping="Wrap" FontSize="10" FontWeight="Bold" Foreground="LightGray"
+                           HorizontalAlignment="Center" Margin="0,5,0,0" FontFamily="monteserrat"
+                           Width="250" TextAlignment="Center"/>
+            </StackPanel>
+
+
+        </Border>
+    </Border>
+</Window>

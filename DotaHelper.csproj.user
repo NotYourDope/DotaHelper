@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AboutTimers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DraftWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RegistrationForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SuccesfulLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SuccesfulRegistration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UnsuccesfulLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UnsuccesfulRegistration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AboutTimers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DraftWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegistrationForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SuccesfulLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SuccesfulRegistration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UnsuccesfulLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UnsuccesfulRegistration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
