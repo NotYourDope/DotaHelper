@@ -23,5 +23,5 @@ If the user is logged in, his username will be displayed in the main window.
 
   -- Timing assistant --
   Starts a global timer that is supposed to be an approximate analog for the in-game timer to control runes. 
-  Audio alerts for runes events (.mp4 files)
-  Roshan and the tormentor's timing assistant.
+  Audio alerts for runes events (.mp4 files)
+  Roshan and the tormentor's timing assistant.
