@@ -19,7 +19,7 @@ No MVVM.
 -- Main window --
 
   -- Drafting assistant --
-  1. Depending on the chosen heroes for enemies and allies, tips will be displayed according to information taken from the DB.
+  1. Depending on the chosen heroes for enemies and allies, tips will be displayed according to information taken from the DB.
 
   -- Timing assistant --
   1. Starts a global timer that is supposed to be an approximate analog for the in-game timer to control runes. 
