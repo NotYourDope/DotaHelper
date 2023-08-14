@@ -13,8 +13,8 @@ No MVVM.
 1. Looks for an existing account in the database using the username and password entered.
 
 -- Login / No login variant -- 
-If the user wants not to log in, there is a button for that. In the main window, there will be a button to authorize.
-If the user is logged in, his username will be displayed in the main window.
+1. If the user wants not to log in, there is a button for that. In the main window, there will be a button to authorize.
+2. If the user is logged in, his username will be displayed in the main window.
 
 -- Main window --
 
