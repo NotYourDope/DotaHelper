@@ -19,9 +19,9 @@ No MVVM.
 -- Main window --
 
   -- Drafting assistant --
-  Depending on the chosen heroes for enemies and allies, tips will be displayed according to information taken from the DB.
+  1. Depending on the chosen heroes for enemies and allies, tips will be displayed according to information taken from the DB.
 
   -- Timing assistant --
-  Starts a global timer that is supposed to be an approximate analog for the in-game timer to control runes. 
-  Audio alerts for runes events (.mp4 files)
-  Roshan and the tormentor's timing assistant.
+  1. Starts a global timer that is supposed to be an approximate analog for the in-game timer to control runes. 
+  2. Audio alerts for runes events (.mp4 files)
+  3. Roshan and the tormentor's timing assistant.
